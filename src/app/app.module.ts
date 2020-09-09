@@ -15,8 +15,12 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
 // import { IncrementadorComponent } from './components/incrementador/incrementador.component';
 
+//SERVICIOS
+import { SettingsService } from './services/services.index';
+import { ServiceModule } from './services/service.module';
 //TEMPORAL
 import { FormsModule } from '@angular/forms';
+
 
 
 @NgModule({
@@ -32,7 +36,8 @@ import { FormsModule } from '@angular/forms';
     // AppRoutingModule,
     APP_ROUTES,
     PagesModule,
-    FormsModule
+    FormsModule,
+    ServiceModule
       
   ],
   providers: [],
